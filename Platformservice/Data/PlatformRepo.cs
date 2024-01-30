@@ -26,10 +26,7 @@ public class PlatformRepo : IPlatformRepo
     public Platform GetPlatformById(int id)
     {
         Platform plat = _context.Platforms.FirstOrDefault(p => p.Id == id);
-        if(plat is null)
-        {
-            throw new ArgumentNullException(nameof(plat));
-        }
+       
         return plat;
     }
     public bool SaveChanges()

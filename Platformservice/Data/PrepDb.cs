@@ -19,18 +19,21 @@ public static class PrepDb
             context.Platforms.AddRange(
                 new Platform
                 {
+                    Id = 1,
                     Name = "Dot net",
                     Publisher = "MS",
                     Cost = "free"
                 },
                 new Platform
                 {
+                    Id = 2,
                     Name = "SQL",
                     Publisher = "MS",
                     Cost = "free"
                 },
                 new Platform
                 {
+                    Id = 3,
                     Name = "K8s",
                     Publisher = "Cloud Native",
                     Cost = "free"
